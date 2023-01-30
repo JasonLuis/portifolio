@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { quasar } from '@quasar/vite-plugin'
+import { defineNuxtConfig } from 'nuxt/config'
 
 // eslint-disable-next-line no-undef
 export default defineNuxtConfig({
