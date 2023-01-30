@@ -1,19 +1,32 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <q-btn
-    no-caps
-    class="q-pa-none"
-    text-color="white"
-    label="Download Resume"
-  />
+  <div class="q-pa-md q-gutter-sm">
+    <q-btn
+      style="background: #FF0080; color: white"
+      label="Fuchsia"
+    />
+    <q-btn
+      flat
+      style="color: #FF0080"
+      label="Fuchsia Flat"
+    />
+    <q-btn
+      style="background: goldenrod; color: white"
+      label="Goldenrod"
+    />
+    <q-btn
+      outline
+      style="color: goldenrod;"
+      label="Goldenrod"
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
 </script>
 <style scoped lang="scss">
-// @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
 
-.q-btn {
+ /* .q-btn {
   width: 218px;
   min-height: 47px;
   font-family: 'Heebo';
@@ -22,5 +35,5 @@
   font-size: 20px;
   background-color: #FF6464;
   border-radius: 2px;
-}
+} */
 </style>
