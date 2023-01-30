@@ -7,21 +7,26 @@ export default defineNuxtConfig({
   ssr: false,
   srcDir: 'src/',
   dir: {
-    pages: 'ui/pages/Home'
+    pages: 'pages',
+    assets: 'core/assets',
+    layouts: 'core/layouts',
+    middleware: 'core/middlewares',
+    static: 'core/static',
+    public: 'core/public'
   },
   components: {
-    dirs: ['ui/core/components']
+    dirs: ['core/components']
   },
   css: [
     '@quasar/extras/roboto-font/roboto-font.css',
     '@quasar/extras/material-icons/material-icons.css',
-    '~/ui/core/assets/styles/quasar.sass'
+    '~/core/assets/styles/quasar.sass'
   ],
   build: {
     transpile: ['quasar']
   },
   plugins: [
-    '~/plugins/quasar.client.ts'
+    '~/core/plugins/quasar.client.ts'
   ],
   vite: {
     plugins: [
@@ -29,7 +34,7 @@ export default defineNuxtConfig({
           template: { transformAssetUrls }
         }), */
       quasar({
-        sassVariables: '~/ui/core/assets/styles/quasar.variables.sass'
+        sassVariables: '~/core/assets/styles/quasar.variables.sass'
       })
     ]
 
