@@ -23,7 +23,7 @@ const Template = (args, { argTypes }) => ({
 export const Default = Template.bind({})
 
 Default.args = {
-  label: ''
+  label: 'Download Resume'
 }
 
 Default.parameters = {
