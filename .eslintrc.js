@@ -5,7 +5,14 @@ module.exports = {
     node: true,
     'vue/setup-compiler-macros': true
   },
-  extends: ['plugin:vue/base', 'plugin:vue/vue3-essential', 'plugin:vue/vue3-strongly-recommended', 'plugin:vue/vue3-recommended', 'eslint:recommended', 'standard', 'plugin:storybook/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'plugin:vue/base',
+    'plugin:vue/vue3-essential',
+    'plugin:vue/vue3-strongly-recommended',
+    'plugin:vue/vue3-recommended',
+    'eslint:recommended',
+    'standard'
+  ],
   parser: 'vue-eslint-parser',
   overrides: [],
   parserOptions: {
@@ -13,5 +20,8 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['vue', '@typescript-eslint']
-};
+  plugins: [
+    'vue',
+    '@typescript-eslint'
+  ]
+}

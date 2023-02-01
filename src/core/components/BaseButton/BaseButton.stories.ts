@@ -3,7 +3,12 @@ import UiBaseButton from './BaseButton.vue'
 export default {
   title: 'Ui/Button',
   component: UiBaseButton,
-  argTypes: {}
+  argTypes: {
+    label: {
+      control: { type: 'text' },
+      description: 'The label of the button'
+    }
+  }
 }
 
 const Template = (args, { argTypes }) => ({
@@ -12,17 +17,19 @@ const Template = (args, { argTypes }) => ({
   setup () {
     return { args }
   },
-  template: '<UiBaseButton v-bind="args" />'
+  template: '<ui-base-button v-bind="args" />'
 })
 
 export const Default = Template.bind({})
 
-// Default.args = {}
+Default.args = {
+  label: ''
+}
 
 Default.parameters = {
   docs: {
     source: {
-      code: '<UiBaseButton />',
+      code: '<ui-base-button :label="myLabel" />',
       language: 'vue',
       type: 'auto'
     }
