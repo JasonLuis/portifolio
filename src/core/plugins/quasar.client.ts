@@ -1,5 +1,5 @@
 import { defineNuxtPlugin } from '#app'
-import { Quasar, QPage, QBtn, QToolbarTitle, QToolbar, QCard, QCardSection, QPageContainer, QDrawer, QLayout, QList, QHeader, QItemLabel, QIcon, QItemSection, QItem, QSeparator } from 'quasar'
+import { Quasar, QPage, QBtn, QToolbarTitle, QToolbar, QCard, QCardSection, QPageContainer, QDrawer, QLayout, QList, QHeader, QItemLabel, QIcon, QItemSection, QItem, QSeparator, QSpace } from 'quasar'
 
 export default defineNuxtPlugin(nuxtApp => {
   const quasarUserOptions = {
@@ -19,7 +19,8 @@ export default defineNuxtPlugin(nuxtApp => {
       QIcon,
       QItemSection,
       QItem,
-      QSeparator
+      QSeparator,
+      QSpace
     },
     plugins: {}
   }
