@@ -5,30 +5,32 @@
     <q-card-section class="row q-pa-none">
       <div class="col-4 row q-pt-sm justify-center">
         <q-img
-          :src="img"
+          :src="props.img"
           spinner-color="red"
         />
       </div>
       <div class="col-8 column q-pa-none">
         <div class="text-title q-pa-none">
-          {{ title }}
+          {{ props.title }}
         </div>
         <div class="text-subtitle row full-width q-mt-sm">
           <div
             class="text-subtitle__year"
           >
-            {{ year }}
+            {{ props.year }}
           </div>
           <div class="text-subtitle__name">
-            {{ subtitle }}
+            {{ props.subtitle }}
           </div>
         </div>
         <div class="text-description">
-          <p>{{ description }}</p>
+          <p>{{ props.description }}</p>
         </div>
       </div>
     </q-card-section>
-    <q-separator class="q-mt-lg" />
+    <div class="text-center">
+      <q-separator class="q-mt-lg" />
+    </div>
   </q-card>
 </template>
 
