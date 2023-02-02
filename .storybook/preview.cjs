@@ -1,4 +1,4 @@
-import 'quasar/dist/quasar.css';
+import '../src/core/assets/styles/quasar.sass';
 import { app } from '@storybook/vue3';
 import { Quasar } from 'quasar';
 
